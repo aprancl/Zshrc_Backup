@@ -41,6 +41,7 @@ alias kl='kubectl'
 alias vi='nvim'
 alias q='exit'
 alias neofetch='fastfetch'
+alias ls='ls -G'
 
 
 # My PATHS
@@ -48,6 +49,7 @@ export PATH="$PATH:/Users/anthonyprancl/Documents/Classes/Junior Spring/Software
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:/Users/anthonyprancl/Library/Python/3.11/bin" # uvicorn path
 export PATH="$PATH:/Users/anthonyprancl/Library/Android/sdk/emulator"
+export LSCOLORS=GxFxCxDxBxegedabagaced
 # PATH=$INSTALL_DIR/bin:$PATH
 
 # >>> conda initialize >>>
@@ -91,7 +93,6 @@ PROMPT='%n@%m $(prompt_pwd) %# '
 autoload -U colors && colors
 #PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}λ%b "
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}\$(prompt_pwd)%{$fg[red]%}]%{$reset_color%}λ%b "
-
 
 autoload -U compinit
 zstyle ':completion:*' menu select
