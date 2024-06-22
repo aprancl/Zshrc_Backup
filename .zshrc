@@ -49,7 +49,9 @@ export PATH="$PATH:/Users/anthonyprancl/Documents/Classes/Junior Spring/Software
 export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:/Users/anthonyprancl/Library/Python/3.11/bin" # uvicorn path
 export PATH="$PATH:/Users/anthonyprancl/Library/Android/sdk/emulator"
+export PATH="$PATH:/Users/anthonyprancl/.config/Zshrc_Backup"
 export LSCOLORS=GxFxCxDxBxegedabagaced
+art.sh
 # PATH=$INSTALL_DIR/bin:$PATH
 
 # >>> conda initialize >>>
