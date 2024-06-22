@@ -54,8 +54,14 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 art.sh
 # PATH=$INSTALL_DIR/bin:$PATH
 
+source <(fzf --zsh)
+HISTFILE=~/.config/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 # >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
+# !! Co ntents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/anthonyprancl/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
