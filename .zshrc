@@ -50,6 +50,7 @@ export PATH="$PATH:$HOME/.pub-cache/bin"
 export PATH="$PATH:/Users/anthonyprancl/Library/Python/3.11/bin" # uvicorn path
 export PATH="$PATH:/Users/anthonyprancl/Library/Android/sdk/emulator"
 export PATH="$PATH:/Users/anthonyprancl/.config/Zshrc_Backup"
+export PATH="$PATH:/Users/anthonyprancl/.config/emacs/bin"
 export LSCOLORS=GxFxCxDxBxegedabagaced
 art.sh
 # PATH=$INSTALL_DIR/bin:$PATH
@@ -83,17 +84,17 @@ setopt prompt_subst
 
 # Custom function to show only the last two directories
 prompt_pwd() {
-  local current_dir=${PWD##*/}
-  local prev_dir=$(basename $(dirname "$PWD"))
-  if [[ $PWD == $HOME ]]; then
+  local current_dir="${PWD##*/}"
+  local prev_dir="$(basename "$(dirname "$PWD")")"
+  
+  if [[ "$PWD" == "$HOME" ]]; then
     echo "~"
-  elif [[ $(dirname "$PWD") == $HOME ]]; then
+  elif [[ "$(dirname "$PWD")" == "$HOME" ]]; then
     echo "~/$(basename "$PWD")"
   else
     echo "${prev_dir}/${current_dir}"
   fi
 }
-
 
 # Set the prompt using the custom function
 PROMPT='%n@%m $(prompt_pwd) %# '

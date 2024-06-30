@@ -16,7 +16,7 @@ elif [[ $random_number == 1 ]]; then
 	echo ""
 	echo "▄▀█ █▀█ █▀█ █░░ █▀▀"
 	echo "█▀█ █▀▀ █▀▀ █▄▄ ██▄"
-	ehco ""
+	echo ""
 
 elif [[ $random_number == 2 ]]; then
 	echo ""
